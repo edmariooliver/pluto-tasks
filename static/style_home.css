@@ -1,0 +1,101 @@
+*{
+    margin: auto;
+    font-family: "Fjalla One";
+    padding: 0;
+    margin: 0;
+}
+h1{
+    font-size: 30pt;
+}
+h4{
+    font-size: 15pt;
+}
+body{
+    display: grid;
+    grid-template-columns:100fr;
+    grid-template-rows: 100px 60vh 5vh;
+    grid-template-areas:'header'
+                        'main'
+                        'footer';
+}
+
+footer{
+    padding:auto;
+    background-color: black;
+    margin-top: 100px;
+    width: 100fr;
+    grid-area: footer;
+    color: rgb(20, 20, 20);
+}
+main{
+    padding-top: 10px;
+    background: rgb(255, 255, 255);
+    grid-area: main;
+    padding-left: 10px;
+}
+header{
+    height: 80px;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 100%;
+    background: rgb(95, 204, 255);
+    grid-area: header;
+}
+.svg-input{
+    vertical-align: middle;
+    height: 25px;
+    width: 25px;    
+}
+input{
+    height: 30px;
+    width: 80%;
+    border: none;
+    font-size: 10pt;
+    outline: none;
+}
+.box-input{
+    padding-top: 5px;
+    height: 35px;
+    border: 1px solid black;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    padding-left: 5px;
+}
+.button-submit{
+    width: 385px;
+    cursor: pointer;
+    background: rgb(4, 255, 4);
+    font-size: 15px;
+    margin:auto;
+    height: 30px;
+    border: 1px solid black;
+}
+.login{
+    margin: auto;
+    width: 400px;
+    background: rgb(255, 255, 255); 
+}
+.form-index{
+    padding-right: 5px;
+    padding: 10px;
+    background: rgb(255, 255, 255);
+}
+.txt-welcome{
+    margin: auto;
+}
+#img-home {
+    vertical-align: middle;
+    float: right;
+    height: 40%;
+    width: 40%;
+}
+@media screen and (max-width:720px){
+    #img-home{
+        display: none;
+    }
+}
+.button-home{
+    background: green;
+}
